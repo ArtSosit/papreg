@@ -1,14 +1,4 @@
-<?php
-include 'dbconn.php';
-$sql = "SELECT * FROM test2";
-$result = $conn->query($sql);
-$data = [];
-if ($result->num_rows > 0) {
-  while ($row = $result->fetch_assoc()) {
-    $data[$row['fid']] = $row['text']; // เก็บข้อมูลโดยใช้ 'fid' เป็นคีย์
-  }
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -209,7 +199,6 @@ if ($result->num_rows > 0) {
       });
     }
   </script>
-  <!-- TABLE1 -->
   <script>
     function fetchDataTb1() {
       const action = "table1"
