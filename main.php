@@ -780,6 +780,7 @@
           }
         });
       });
+
       $(document).on('click', '.delete-btn', function() {
         const formId = $(this).siblings('.edit-btn').data('form-id'); // Get form ID from the sibling edit button's data attribute
         console.log("Form ID for deletion:", formId);
